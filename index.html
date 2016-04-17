@@ -89,9 +89,7 @@
 
 				<section>
 					<h3>We are...</h3>
-					<iframe id="player" type="text/html" width="640" height="390"
-					src="https://www.youtube.com/watch?v=VSdxqIBfEAw?enablejsapi=1"
-					frameborder="0"></iframe>
+					<iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/watch?v=VSdxqIBfEAw?enablejsapi=1" frameborder="0"></iframe>
 				</section>
 
 				<section>
@@ -132,24 +130,53 @@
 				<section>
 					<h3>DevOps loves Reactive</h3>
 					<ul>
-						<li>+ In the past, they had to restart servers manually in case of network failures</li>
-						<li>+ Should all threads be blocked (out of memory under heavy load) - tanuki wrapper restarted the app</li>
-						<li>+ Reactive systems generally heal themselves unless there is a serious code bug</li>
-						<li>- Application needs extra testing for failure scenarios</li>
+						<li>In the past, they had to restart servers manually in case of network failures</li>
+						<li>Should all threads be blocked (out of memory under heavy load) - tanuki wrapper restarted the app</li>
+						<li>Reactive systems generally heal themselves unless there is a serious code bug</li>
 					</ul>
 				</section>
 
 				<section>
-					<h3>The previous sitation</h3>
-					<p>
-						
-						
-					</p>
-					<p><sup><small>1</small></sup><a href="https://en.wikipedia.org/wiki/Reactive_programming">https://en.wikipedia.org/wiki/Reactive_programming</a></p>
+					<h3>QAs hate Reactive</h3>
+					<ul>
+						<li>Applications need extra testing in case of failures</li>
+						<li>Manual or automated (Chaos Monkey)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>What we already know.</h3>
+					<ul>
+						<li>CRUD - Create, Read, Update and Delete</li>
+						<li>ACID - ATOMICITY, Consistency, Isolation, Durability</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>BASE - Basically Available, Soft-state, Eventually Consistent</li>
+					</ul>
 				</section>
 				
+				<section>
+					<h3>CAP Theorem</h3>
+					<object type="image/svg+xml" data="images/cap.svg">
+  						Your browser does not support SVG
+					</object>
+				</section>
+				
+				<section>
+					<h3>Reactive inspirations</h3>
+					<ul>
+						<li>Fallback for optional data - in case of system failure</li>
+						<li>Hot/cold endpoints</li>
+						<li>Circuit breakers (for hot endpoints only)</li>
+						<li>Bulkhead isolation pattern</li>
+						<li>Backpressure handling</li>
+						<li>Event Sourcing / CQRS</li>
+					</ul>
+				</section>
 
-				 <section>
+     			<section>
                     <h2>Wrap up</h2>
                     <ul>
                         <li><a href="https://github.com/matiwinnetou/why-reactive">https://github.com/matiwinnetou/why-reactive</a></li>
