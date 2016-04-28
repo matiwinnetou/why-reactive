@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Why Reactive?</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -70,6 +70,7 @@
 				<section>
 					<h3>All can go pear shaped.</h3>
 					<img src="images/cargo-fail.jpg" />
+					<blockquote>"Cargo cult should inspire you but never disable your critical approach to this and stop thinking about it".</blockquote>
 				</section>					
 				<section>
 					<h3>Cargo cult programming</h3>
@@ -101,6 +102,23 @@
 					<ul>
 						<li><a href="https://channel9.msdn.com/Events/Lang-NEXT/Lang-NEXT-2014/Keynote-Duality">https://channel9.msdn.com/Events/Lang-NEXT/Lang-NEXT-2014/Keynote-Duality</a></li>
 					</ul>
+				</section>
+
+				<section>
+					<h3>OOP design patterns are dead?</h3>
+					<ul>
+						<li>What about ECS pattern?</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>Public search germany - learnings</h3>
+					<blockquote>"Blocking threads doesn't seem to be an issue, our google closure soy GC pressure is high." - Sergiusz Urbaniak</blockquote>
+				</section>
+
+				<section>
+					<h3>Cargo doesn't help</h3>
+					<p>Think, measure and analyze - does this make sense for your usecase?</p>
 				</section>
 
 				<section>
@@ -148,7 +166,7 @@
 				</section>
 
 				<section>
-					<h3>QAs hate Reactive</h3>
+					<h3>QA's hate Reactive</h3>
 					<ul>
 						<li>Applications need extra testing in case of failures</li>
 						<li>Manual or automated (Chaos Monkey)</li>
@@ -168,6 +186,7 @@
 					<ul>
 						<li>bigger companies move to BASE</li>
 						<li>Easier to reason about for developers - DB maintains consistency<li>
+						<li>Even ACID (I) has different isolation levels</li>
 					</ul>
 				</section>
 
@@ -189,15 +208,23 @@
 						<li>Event Sourcing / CQRS</li>
 					</ul>
 				</section>
+				
+				<section>
+					<h3>Circuit Breaker</h3>
+					<ul>
+						<li>makes sense only for a high load cases (hot endpoints)</li>
+					</ul>
+				</section>
 
 				<section>
 					<h3>Reactive libs</h3>
 					<ul>
 						<li>React.js</li>
 						<li>Bacon.js</li>
-						<li>RxJs</li>
-						<li>Akka</li>
-						<li>RxJava</li>
+						<li>Reactive Streams<li>
+						<li>ReactiveX (RxJava, RxJs, RxScala)</li>
+						<li>Akka (many umbrella projects)</li>
+						<li>Verte.x<li>
 						<li>Hystrix</li>
 						<li>cycle.js</li>
 						<li>ractivejs</li>
@@ -235,7 +262,13 @@
 					<ul>
 						<li>DDOS attack</li>
 						<li>AP systems</li>
+						<li>high load scenarios</li>
 					</ul>
+				</section>
+				
+				<section>
+					<h3>MobLab case...</h3>
+					<a href=""></a>
 				</section>
 				
      			<section>
